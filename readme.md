@@ -16,7 +16,7 @@ Training
 
 Results:
 
-![](images/QualResults.png)
+![](images/perceptron.gif)
 
 The perceptron converges at 15th epoch when initial weihgts are set at (1, 1)
 
@@ -31,7 +31,7 @@ Training
 	* `batch_size`: No. of samples per batch
 	* `numpy`: make sure this flag is on, else the NN code will give error
 	* `train`: if this flag is given then the network will be trained else ot performs prediction on the test set
-	
+
 
 ## CNN
 
