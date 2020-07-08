@@ -1,8 +1,11 @@
 
+[Link](https://drive.google.com/file/d/1oDV317Buqcy7COplKXgH1Nqlm0oFJZGV/view?usp=sharing) to project report.
+
 ## Dependencies
 * Pytorch 1.4
 * Numpy
 * Pandas
+
 
 ## Perceptron 
 
@@ -23,7 +26,7 @@ The perceptron converges at 15th epoch when initial weihgts are set at (1, 1)
 ## Neural Network
 
 Training 
-`python -m train_digit_recognizer.py --name digits --epochs 400 --train --numpy`
+`python -m train_digit_recognizer --name digits --epochs 400 --train --mode numpy`
 
 * Main Arguments
 	* `--name`: creates a directory inside the checkpoiints dir, where plots will be saved

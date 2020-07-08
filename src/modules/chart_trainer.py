@@ -24,7 +24,6 @@ class ChartsTrainer(BaseTrainer):
             torch.cuda.is_available() else "cpu")
         self.model = args.model.to(self.device)
         self.optimizer = args.optimizer
-        self.scheduler = CosineAnnealingLR(self.optimizer, T_max=args.epochs)
         self.criterion  = args.criterion
         self.data_train = args.data_train
         self.data_val = args.data_val

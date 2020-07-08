@@ -25,7 +25,8 @@ if __name__ == '__main__':
     parser.add_argument('--continue_train', action='store_true')
     parser.add_argument('--batch_size', type=int, default=32)
     parser.add_argument('--epochs', type=int, default=10)
-    parser.add_argument('--numpy', action='store_true')
+    parser.add_argument('--mode', type=str, default='numpy')
+
     args = parser.parse_args()
 
     # args.transform = composite_function(RandomFlip(0.5))
@@ -57,7 +58,7 @@ if __name__ == '__main__':
             
         if val_result['val_loss'] < best_loss:
             print('Saving a new Model')
-            trainer.save_networks('latest')
+            trainer.save_networks()
         else:
             print('Old Loss: %.4f --> New Loss: %.4f'%(best_loss, val_loss))
     plot_losses(train_loss, val_loss, train_acc, val_acc, epoch, trainer.save_dir)

@@ -62,7 +62,6 @@ class BaseTrainer(ABC):
                 output = self.val_step(batch)
             pbar.set_postfix(output)
             outputs.append(output)
-        self.scheduler.step()
         if not validation:
             result = self.train_end(outputs)
         else:
