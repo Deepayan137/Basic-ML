@@ -33,7 +33,7 @@ Training
 	* `epochs`: No. of itertions
 	* `batch_size`: No. of samples per batch
 	* `numpy`: make sure this flag is on, else the NN code will give error
-	* `train`: if this flag is given then the network will be trained else ot performs prediction on the test set
+	* `train`: if this flag is given then the network will be trained else it performs prediction on the test set
 
 
 ## CNN
