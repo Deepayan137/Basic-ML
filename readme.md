@@ -41,7 +41,7 @@ Training
 Training
 
 `python train_chart_classifier.py --epochs 100 --name cnn --mode pytorch --csvfile train_val.csv  --pretrained  --train`
-
+  
 
 
 * Main Arguments
